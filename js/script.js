@@ -21,6 +21,9 @@ $.getJSON(path)
 			catalog_card.children[1].textContent = element["title"]
 			catalog_card.children[2].textContent = element["name"]
 			catalog_card.children[3].textContent = element["price"]
+			catalog_card.children[3].onclick = () => {
+				window.location.href = element["button"]
+			}
 
 			catalog.appendChild(catalog_card)
 		});
