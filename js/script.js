@@ -27,4 +27,4 @@ $.getJSON(path)
 	});
 }
 
-parse_catalog("catalog.json")
+parse_catalog("../js/catalog.json")
